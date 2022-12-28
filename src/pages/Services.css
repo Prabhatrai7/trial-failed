@@ -184,9 +184,13 @@
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
     .header-start,
     .header-end {
         font-size: 30px;
+    }
+
+    .circle {
+        width: 35%;
     }
 }
