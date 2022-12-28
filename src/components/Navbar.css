@@ -146,13 +146,13 @@
     }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 550px) {
     .container {
-        margin: 0px 30px;
+        margin: 0px 40px;
     }
 
     .navbar .nav-close-btn {
-        right: 30px;
+        right: 40px;
     }
 }
 
