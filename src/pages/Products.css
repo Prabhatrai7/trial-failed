@@ -1,0 +1,125 @@
+.products-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(229, 233, 233);
+}
+
+.heading-section {
+    display: flex;
+    justify-content: center;
+    margin: 150px 0px 50px 0px;
+}
+
+.info {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 70px 0px;
+}
+
+.searchBar {
+    height: 30px;
+    width: 40%;
+    border: none;
+    border-radius: 25px;
+    padding: 5px 20px;
+    font-size: large;
+}
+
+input.searchBar {
+    border: 1px solid #555;
+    display: block;
+    padding: 9px 4px 9px 40px;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='26' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+}
+
+.product-items {
+    display: flex;
+    justify-content: center; 
+}
+
+.product-name, .product-desc {
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.product-detail {
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 620px) {
+    .products-container {
+        height: auto;
+    }
+
+    .heading-section {
+        margin: 30px;
+    }
+
+    .searchBar {
+        width: 50%;
+    }
+    
+    .product-items {
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .info {
+        font-size: large;
+    }
+
+    .searchBar {
+        width: 50%;
+    }
+
+    input.searchBar {
+        font-size: medium;
+    }
+
+    .product-items {
+        margin-top: -30px;
+        padding: 0px;
+    }
+
+    .product-name,
+    .product-desc {
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    input.searchBar {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    input.searchBar {
+        padding: 3px 3px 3px 35px;
+        background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='24' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    input.searchBar {
+        font-size: 12px;
+        width: 60%;
+    }
+
+    .product-name,
+    .product-desc {
+        font-size: small;
+    }
+}

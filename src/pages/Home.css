@@ -1,0 +1,105 @@
+.bg-img {
+    background-image: url("../images/pharmacy.jpg");
+    top: -10px;
+    position: relative;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.container {
+    width: auto;
+    margin: 0px 150px;
+    background: rgba(0, 0, 0, 0);
+}
+
+.intro-start {
+    position: absolute;
+    top: 270px;
+    left: 150px;
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(17, 157, 150);
+}
+
+.intro-end {
+    position: absolute;
+    bottom: 30px;
+    left: 150px;
+    font-size: 80px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+@media only screen and (max-width: 980px) {
+    .intro-start, .intro-end {
+        left: 100px;
+        margin-bottom: -20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .intro-start, .intro-end {
+        font-size: 50px;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .bg-img {
+        background-image: url("../images/pharmacy.jpg");
+        background-size: cover;
+        height: 70vh;
+    }
+
+    .container {
+        margin: 0px 60px;
+    }
+
+    .intro-start {
+        position: relative;
+        top: 100px;
+        left: 0;
+        font-size: 50px;
+    }
+
+    .intro-end {
+        position: relative;
+        bottom: -50px;
+        left: 0;
+        font-size: 50px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .intro-start, .intro-end {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .bg-img {
+        height: 70vh;
+    }
+
+    .intro-start,
+    .intro-end {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .bg-img {
+        height: 60vh;
+    }
+
+    .intro-start,
+    .intro-end {
+        font-size: 25px;
+    }
+}
